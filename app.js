@@ -79,10 +79,10 @@ document.addEventListener('DOMContentLoaded', () => {
     if(optionOneId == optionTwoId) {
       cards[optionOneId].setAttribute('src', 'images/blank.png')
       cards[optionTwoId].setAttribute('src', 'images/blank.png')
-      alert('You have clicked the same image!')
+      alert('Você clicou na mesma imagem!')
     }
     else if (cardsChosen[0] === cardsChosen[1]) {
-      alert('You found a match')
+      alert('Achou o par :D')
       cards[optionOneId].setAttribute('src', 'images/white.png')
       cards[optionTwoId].setAttribute('src', 'images/white.png')
       cards[optionOneId].removeEventListener('click', flipCard)
@@ -91,13 +91,13 @@ document.addEventListener('DOMContentLoaded', () => {
     } else {
       cards[optionOneId].setAttribute('src', 'images/blank.png')
       cards[optionTwoId].setAttribute('src', 'images/blank.png')
-      alert('Sorry, try again')
+      alert('Tente Novamente')
     }
     cardsChosen = []
     cardsChosenId = []
     resultDisplay.textContent = cardsWon.length
     if  (cardsWon.length === cardArray.length/2) {
-      resultDisplay.textContent = 'Congratulations! You found them all!'
+      resultDisplay.textContent = 'Parabéns você encontrou todas!!!!!'
     }
   }
 
